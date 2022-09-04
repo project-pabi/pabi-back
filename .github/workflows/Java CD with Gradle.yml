@@ -43,7 +43,6 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
-        port: ${{ secrets.PORT }}
         source: "./build/libs/*.jar"
         target: "/data/pabi/dev"
         strip_components: 2
@@ -54,7 +53,6 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
-        port: ${{ secrets.PORT }}
         script_stop: true
         script: |
           cd /data/pabi/dev/
